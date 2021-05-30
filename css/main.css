@@ -2672,7 +2672,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1200px) {
   .s-works {
-    padding: 15rem 0 22.2rem;
+    padding: 10rem 0 10rem;
   }
 }
 @media only screen and (max-width: 1100px) {
