@@ -340,12 +340,10 @@
       if (num == images.length) {
         num = 0;
       }
-      console.log(images[num]);
 
       mainImageDiv.css("background-image", `url(${images[num]})`);
     }, 5000);
 
-    console.log(mainImageDiv.attr("data-image-src"));
   };
 
   /* Initialize
