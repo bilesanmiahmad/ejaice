@@ -346,6 +346,32 @@
         });
     };
 
+    var images = [
+        'images/tricycles.png',
+        'images/freezers.png'
+    ]
+
+    var sleep = function(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+
+    var updateMainImage = function() {
+        var mainImageDiv = $("#home");
+        var num = 0;
+    
+        mainImageDiv.attr("data-image-src", images[num]);
+        setInterval(function(){
+            num++;
+            if (num == images.length){
+                num = 0;
+            }
+            // mainImageDiv.attr("data-image-src", images[num]);
+            mainImageDiv.css("data-image-src", images[num]);
+        }, 5000);
+        console.log(mainImageDiv.attr("data-image-src"));
+
+    };
+
 
    /* Initialize
     * ------------------------------------------------------ */
@@ -358,6 +384,7 @@
         clStatCount();
         clMasonryFolio();
         clSlickSlider();
+        updateMainImage();
         clSmoothScroll();
         clPlaceholder();
         clAlertBoxes();

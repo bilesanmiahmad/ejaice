@@ -2876,7 +2876,7 @@ html.no-csstransitions .home-content__main {
 
 .partner-container .item{
   width: 150px;
-  height: 250px;
+  height: 100px;
   margin: 30px;
   color: black;
   font-weight: bold;
@@ -2885,6 +2885,11 @@ html.no-csstransitions .home-content__main {
 
 .item-details{
   margin: 0 auto;
+}
+
+.item img{
+  width: 150px;
+  height: 100px;
 }
 
 
