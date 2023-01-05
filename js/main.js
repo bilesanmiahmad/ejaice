@@ -321,7 +321,7 @@
     });
   };
 
-  var images = ["/images/tricycles.png", "/images/freezers.png"];
+  var images = ["images/tricycles.png", "images/freezers.png"];
 
   var sleep = function (ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
